@@ -6,15 +6,19 @@
   <title>Cat Energy</title>
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <link rel="stylesheet" href="styles/styles.css">
+  <link rel="icon" href="favicon.ico">
+  <link rel="icon" href="favicons/icon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" sizes="180x180" href="favicons//180.png">
+  <link rel="manifest" href="/manifest.webmanifest">
   <script src="scripts/index.js" defer></script>
 </head>
 
 <body class="page__body">
-  <header class="main-header">
+  <header class="header">
     <div class="page__container">
-      <nav class="main-header__navigation navigation">
-          <div class="navigation__wrapper">
-          <a class="logo logo--image" href="#">
+      <nav class="header__navigation navigation">
+        <div class="navigation__wrapper">
+          <a class="logo" href="#">
             <picture>
               <source width="60" height="50" type="image/svg+xml" media="(min-width: 768px)" srcset="images/logo-tablet.svg">
               <img class="logo__image" src="images/logo-mobile.svg" width="33" height="38" alt="Логотип">
@@ -83,7 +87,6 @@
               <source width="200" height="210" media="(min-width: 768px)" type="image/png" srcset="images/card-2-tablet@1x.png 1x,images/card-2-tablet@2x.png 2x">
               <img class="card__image" src="images/card-2-mobile@1x.png" srcset="images/card-2-mobile@2x.png 2x" width="140" height="107" alt="Cat Energy Pro Курица 1000 г">
             </picture>
-
             <div class="card__content">
               <h3 class="card__title">cat energy <br>pro 1000 г</h3>
               <ul class="card__list">
@@ -104,12 +107,10 @@
             <button class="card__button button" type="button">заказать</button>
           </li>
           <li class="catalog__item card">
-
             <picture>
               <source width="200" height="210" media="(min-width: 768px)" type="image/png" srcset="images/card-3-tablet@1x.png 1x,images/card-3-tablet@2x.png 2x">
               <img class="card__image" src="images/card-3-mobile@1x.png" srcset="images/card-3-mobile@2x.png 2x" width="140" height="107" alt="Cat Energy Pro Рыба 500 г">
             </picture>
-
             <div class="card__content">
               <h3 class="card__title">cat energy<br> pro 500 г</h3>
               <ul class="card__list">
@@ -130,12 +131,10 @@
             <button class="card__button button" type="button">заказать</button>
           </li>
           <li class="catalog__item card">
-
             <picture>
               <source width="200" height="210" media="(min-width: 768px)" type="image/png" srcset="images/card-4-tablet@1x.png 1x,images/card-4-tablet@2x.png 2x">
               <img class="card__image" src="images/card-4-mobile@1x.png" srcset="images/card-4-mobile@2x.png 2x" width="140" height="107" alt="Cat Energy Pro Рыба 1000 г">
             </picture>
-
             <div class="card__content">
               <h3 class="card__title">cat energy<br> pro 1000 г</h3>
               <ul class="card__list">
@@ -155,13 +154,11 @@
             </div>
             <button class="card__button button" type="button">заказать</button>
           </li>
-
           <li class="catalog__item card">
             <picture>
               <source width="200" height="210" media="(min-width: 768px)" type="image/png" srcset="images/card-5-tablet@1x.png 1x,images/card-5-tablet@2x.png 2x">
               <img class="card__image" src="images/card-5-mobile@1x.png" srcset="images/card-5-mobile@2x.png 2x" width="140" height="107" alt="Cat Energy Slim Гречка 500 г">
             </picture>
-
             <div class="card__content">
               <h3 class="card__title">cat energy<br> slim 500 г</h3>
               <ul class="card__list">
@@ -181,13 +178,11 @@
             </div>
             <button class="card__button button" type="button">заказать</button>
           </li>
-
           <li class="catalog__item card">
             <picture>
               <source width="200" height="210" media="(min-width: 768px)" type="image/png" srcset="images/card-6-tablet@1x.png 1x,images/card-6-tablet@2x.png 2x">
               <img class="card__image" src="images/card-6-mobile@1x.png" srcset="images/card-6-mobile@2x.png 2x" width="140" height="107" alt="Cat Energy Slim Гречка 1000 г">
             </picture>
-
             <div class="card__content">
               <h3 class="card__title">cat energy<br> slim 1000 г</h3>
               <ul class="card__list">
@@ -207,13 +202,11 @@
             </div>
             <button class="card__button button" type="button">заказать</button>
           </li>
-
           <li class="catalog__item card">
             <picture>
               <source width="200" height="210" media="(min-width: 768px)" type="image/png" srcset="images/card-7-tablet@1x.png 1x,images/card-7-tablet@2x.png 2x">
               <img class="card__image" src="images/card-7-mobile@1x.png" srcset="images/card-7-mobile@2x.png 2x" width="140" height="107" alt="Cat Energy Slim Рис 500 г">
             </picture>
-
             <div class="card__content">
               <h3 class="card__title">cat energy<br> slim 500 г</h3>
               <ul class="card__list">
@@ -233,10 +226,8 @@
             </div>
             <button class="card__button button" type="button">заказать</button>
           </li>
-
           <li class="catalog__item card card--add">
             <img class="card__image" src="images" width="68" height="86" alt="Показать еще">
-
             <div class="card__content">
               <h3 class="card__title">показать еще<br> 100500 товаров</h3>
               <div class="card__content">
@@ -308,7 +299,7 @@
     </section>
   </main>
 
-  <footer class="main-footer">
+  <footer class="footer">
     <section class="map">
       <h2 class="visually-hidden">Карта</h2>
       <!-- TODO: поменять на интерактивный вариант -->
@@ -350,7 +341,6 @@
         </a>
       </div>
     </section>
-
   </footer>
 </body>
 
