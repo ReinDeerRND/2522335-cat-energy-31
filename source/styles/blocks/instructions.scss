@@ -14,5 +14,5 @@
 }
 
 .instructions__item {
-
+  @include standard-content-font();
 }
