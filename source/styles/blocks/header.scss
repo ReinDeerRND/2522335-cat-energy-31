@@ -1,7 +1,12 @@
 /* stylelint-disable rule-empty-line-before */
 /* stylelint-disable block-no-empty */
 .header {
-
+  position: relative;
+  height: 65px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .header__navigation {

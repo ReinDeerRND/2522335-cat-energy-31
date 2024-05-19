@@ -2,11 +2,13 @@
 /* stylelint-disable block-no-empty */
 
 .programs {
-
+  padding: 20px 0;
 }
 
 .programs__list {
-
+  display: grid;
+  grid-auto-flow: row;
+  grid-gap: 20px;
 }
 
 .programs__item {

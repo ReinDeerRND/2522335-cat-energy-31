@@ -1,16 +1,15 @@
-/* stylelint-disable rule-empty-line-before */
-/* stylelint-disable block-no-empty */
-
 .instructions {
-
+  padding-bottom: 50px;
 }
 
 .instructions__header {
-
+  padding: 0 0 40px;
 }
 
 .instructions__list {
-
+  display: grid;
+  grid-auto-flow: row;
+  grid-gap: 20px;
 }
 
 .instructions__item {

@@ -1,10 +1,18 @@
-/* stylelint-disable rule-empty-line-before */
-/* stylelint-disable block-no-empty */
-
 .map {
+  display: grid;
+  grid-auto-flow: row;
+  row-gap: 0;
+  background-color: #ffffff;
+}
 
+.map--accent {
+  background-color: $bg-accent-color;
 }
 
 .map__invitation {
+  margin: 20px 0;
+}
 
+.map__image {
+  display: block;
 }

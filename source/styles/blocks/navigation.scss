@@ -33,7 +33,19 @@
 
 
 .navigation__list {
+  @include flex-column-center();
+  display: none;
   color: $header-primary-text-color;
+  position: absolute;
+  top: 65px;
+  left: 0;
+  right: 0;
+  z-index: 5;
+  background-color: #ffffff;
+}
+
+.navigation__list--open {
+  display: flex;
 }
 
 .navigation__list--accent-color {
@@ -47,8 +59,15 @@
   font-size: 20px;
   line-height: 20px;
   font-weight: 400;
-  text-align: center;
   text-transform: uppercase;
+  height: 65px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+  border-top: 1px solid #e6e6e6;
 
   @media screen and (min-width: $tablet-viewport) {
     font-size: 18px;

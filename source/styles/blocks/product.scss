@@ -2,7 +2,10 @@
 /* stylelint-disable block-no-empty */
 
 .product {
-
+  padding: 20px 0;
+  display: grid;
+  grid-auto-flow: row;
+  grid-row-gap: 15px;
 }
 
 .product__title {
@@ -25,19 +28,14 @@
   font-family: $primary-font;
   font-weight: 400;
   color: $primary-text-color;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
 
   @media screen and (min-width: $tablet-viewport) {
     font-size: 16px;
     line-height: 20px;
   }
-}
-
-.product__volume {
-
-}
-
-.product__price {
-
 }
 
 .product__button {

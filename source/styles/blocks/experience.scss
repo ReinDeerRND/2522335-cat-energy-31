@@ -1,8 +1,7 @@
-/* stylelint-disable rule-empty-line-before */
-/* stylelint-disable block-no-empty */
-
 .experience {
   background-color: $bg-accent-dark-color;
+  padding: 20px 0 17px;
+
 
   @media screen and (min-width: $tablet-viewport) {
     background: linear-gradient(to top, #ffffff 60%, $bg-accent-color 60%, $bg-accent-color 100%);
@@ -15,6 +14,7 @@
 
 .experience__header {
   background-color: transparent;
+  padding-bottom: 40px;
 
   @media screen and (min-width: $tablet-viewport) {
     background-color: $accent-text-color;
@@ -23,6 +23,9 @@
 
 .experience__description {
   background-color: transparent;
+  display: grid;
+  grid-auto-flow: row;
+  grid-gap: 20px;
 
   @media screen and (min-width: $tablet-viewport) {
     background-color: $accent-text-color;
@@ -38,17 +41,18 @@
 }
 
 .experience__list {
-
+  display: flex;
+  justify-content: space-between;
 }
 
 .experience__item {
-
+  width: 124px;
 }
 
 .experience__footer {
-
+  text-align: center;
 }
 
 .experience__demo {
-
+  margin: 40px 0;
 }

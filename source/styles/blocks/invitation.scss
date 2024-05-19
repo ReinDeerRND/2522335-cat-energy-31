@@ -2,7 +2,9 @@
 /* stylelint-disable block-no-empty */
 
 .invitation {
-  background-color: #ffffff;
+  background-color: transparent;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
 }
 
 .invitation__title {

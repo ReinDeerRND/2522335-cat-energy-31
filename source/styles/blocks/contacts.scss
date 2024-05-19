@@ -1,18 +1,30 @@
-/* stylelint-disable rule-empty-line-before */
-/* stylelint-disable block-no-empty */
-
 .contacts {
   background-color: $bg-accent-color;
 }
 
-.contacts__logo {
+.contacts__wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px 0;
+  background-color: transparent;
+}
 
+.contacts__logo {
+  padding: 10px 0;
+  width: 100%;
+  text-align: center;
 }
 
 .contacts__social {
-
+  @include flex-column-center();
+  padding: 10px 0;
+  border-top: 1px solid #d9d9d9;
+  border-bottom: 1px solid #d9d9d9;
+  width: 100%;
 }
 
 .contacts__copyright {
-
+  padding: 10px 0;
+  width: 100%;
 }
