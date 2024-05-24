@@ -58,6 +58,10 @@
     width: 436px;
     top: 0;
   }
+
+  @media screen and (min-width: $desktop-viewport) {
+    background-color: transparent;
+  }
 }
 
 .navigation__list--open {
@@ -65,6 +69,12 @@
 }
 
 .navigation__list--accent-color {
+  .navigation__item--current {
+    @media screen and (min-width: $desktop-viewport) {
+      color: $accent-text-color;
+    }
+  }
+
   @media screen and (min-width: $desktop-viewport) {
     color: $accent-text-color;
   }

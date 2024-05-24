@@ -16,6 +16,11 @@
     grid-template-columns: 1fr 1fr;
     counter-reset: element;
   }
+
+  @media screen and (min-width: $desktop-viewport) {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap: 40px;
+  }
 }
 
 .instructions__item {

@@ -30,7 +30,6 @@
       top: 0;
       left: 0;
       right: 0;
-
       counter-increment: element;
       content: counter(element);
       font-size: 280px;
@@ -39,6 +38,10 @@
       font-family: $header-font;
       text-align: center;
     }
+  }
+
+  @media screen and (min-width: $desktop-viewport) {
+    width: 246px;
   }
 }
 

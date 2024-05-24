@@ -5,6 +5,11 @@
   display: flex;
   justify-content: center;
   align-items: center;
+
+
+  @media screen and (min-width: $desktop-viewport) {
+    position: absolute;
+  }
 }
 
 .header__navigation {

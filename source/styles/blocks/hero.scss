@@ -11,6 +11,7 @@
   }
 
   @media screen and (min-width: $desktop-viewport) {
+    padding-top: 65px;
     background: linear-gradient(to right, #ffffff 50%, $bg-primary-color 50%, $bg-primary-color 100%);
   }
 }
@@ -27,6 +28,10 @@
     padding: 0 80px;
     min-height: 860px;
   }
+
+  @media screen and (min-width: $desktop-viewport) {
+    min-height: 694px;
+  }
 }
 
 .hero__image {
@@ -38,6 +43,14 @@
     top: 200px;
     left: 0;
     z-index: -1;
+  }
+
+  @media screen and (min-width: $tablet-viewport) {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 5;
   }
 }
 

@@ -25,6 +25,11 @@
     grid-template-columns: 1fr 1fr;
     grid-gap: 40px;
   }
+
+  @media screen and (min-width: $desktop-viewport) {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap: 60px;
+  }
 }
 
 .catalog__item {
@@ -37,5 +42,9 @@
   @media (min-width: $tablet-viewport) {
     border: none;
     width: 324px;
+  }
+
+  @media screen and (min-width: $desktop-viewport) {
+    width: 245px;
   }
 }
