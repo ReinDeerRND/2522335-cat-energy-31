@@ -3,6 +3,7 @@
   grid-auto-flow: row;
   row-gap: 0;
   background-color: #ffffff;
+  overflow-x: hidden;
 }
 
 .map--accent {
@@ -11,8 +12,17 @@
 
 .map__invitation {
   margin: 20px 0;
+
+  @media screen and (min-width: $tablet-viewport) {
+    margin: 60px auto;
+    width: 628px;
+  }
 }
 
 .map__image {
   display: block;
+
+  @media screen and (min-width: $tablet-viewport) {
+    width: $tablet-viewport;
+  }
 }

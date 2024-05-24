@@ -1,5 +1,3 @@
-/* stylelint-disable rule-empty-line-before */
-/* stylelint-disable block-no-empty */
 .header {
   position: relative;
   height: 65px;
@@ -10,5 +8,7 @@
 }
 
 .header__navigation {
-
+  @media screen and (min-width: $tablet-viewport) {
+    padding-top: 20px;
+  }
 }

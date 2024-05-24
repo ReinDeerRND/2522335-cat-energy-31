@@ -32,4 +32,12 @@
   box-sizing: border-box;
   width: 280px;
   margin: 0 auto;
+
+  @media screen and (min-width: $tablet-viewport) {
+    width: 708px;
+  }
+
+  @media screen and (min-width: $desktop-viewport) {
+    width: 1220px;
+  }
 }

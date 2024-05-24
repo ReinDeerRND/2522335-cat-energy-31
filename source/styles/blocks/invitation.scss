@@ -1,6 +1,3 @@
-/* stylelint-disable rule-empty-line-before */
-/* stylelint-disable block-no-empty */
-
 .invitation {
   background-color: transparent;
   display: grid;
@@ -21,5 +18,7 @@
 }
 
 .invitation__address {
-
+  @media screen and (min-width: $tablet-viewport) {
+    text-align: right;
+  }
 }

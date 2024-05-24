@@ -2,9 +2,8 @@
   background-color: $bg-accent-dark-color;
   padding: 20px 0 17px;
 
-
   @media screen and (min-width: $tablet-viewport) {
-    background: linear-gradient(to top, #ffffff 60%, $bg-accent-color 60%, $bg-accent-color 100%);
+    background: linear-gradient(to bottom, #ffffff 60%, $bg-accent-color 60%, $bg-accent-color 100%);
   }
 
   @media screen and (min-width: $desktop-viewport) {
@@ -40,9 +39,19 @@
   @include standard-content-font();
 }
 
+.experience__statistic {
+  display: flex;
+  flex-wrap: wrap;
+}
+
 .experience__list {
+  width: 100%;
   display: flex;
   justify-content: space-between;
+
+  @media screen and (min-width: $tablet-viewport) {
+    width: 50%;
+  }
 }
 
 .experience__item {
@@ -51,8 +60,18 @@
 
 .experience__footer {
   text-align: center;
+  width: 100%;
+  margin-top: 20px;
+
+  @media screen and (min-width: $tablet-viewport) {
+    width: 50%;
+  }
 }
 
 .experience__demo {
   margin: 40px 0;
+
+  @media screen and (min-width: $tablet-viewport) {
+    margin: 40px auto;
+  }
 }

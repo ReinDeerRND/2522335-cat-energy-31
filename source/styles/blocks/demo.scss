@@ -1,11 +1,19 @@
 $slider-color: #666666;
 $demo-height: 256px;
+$demo-height-middle: 512px;
+$demo-width-middle: 560px;
+
 
 .demo {
   position: relative;
   height: $demo-height;
   display: grid;
   grid-template-columns: 1fr 1fr;
+
+  @media screen and (min-width: $tablet-viewport) {
+    height: $demo-height-middle;
+    width: $demo-width-middle;
+  }
 }
 
 .demo__image {
@@ -20,11 +28,21 @@ $demo-height: 256px;
   &.demo__image--after {
     object-position: 100%;
   }
+
+  @media screen and (min-width: $tablet-viewport) {
+    height: $demo-height-middle;
+    width: calc($demo-width-middle/2);
+  }
 }
 
 .demo__image-container {
   width: 100%;
   height: $demo-height;
+
+  @media screen and (min-width: $tablet-viewport) {
+    height: $demo-height-middle;
+    width: calc($demo-width-middle/2);
+  }
 }
 
 .demo__slider {
@@ -64,5 +82,9 @@ $demo-height: 256px;
     mask-position: center;
     mask-repeat: no-repeat;
     object-fit: none;
+  }
+
+  @media screen and (min-width: $tablet-viewport) {
+    height: $demo-height-middle;
   }
 }

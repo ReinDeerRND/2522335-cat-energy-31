@@ -35,12 +35,12 @@
           </button>
         </div>
         <ul class="navigation__list">
-          <li class="navigation__item navigation__item--current">
+          <li class="navigation__item">
             <a class="navigation__link" href="index.html">
               главная
             </a>
           </li>
-          <li class="navigation__item">
+          <li class="navigation__item navigation__item--current">
             <a class="navigation__link" href="catalog.html">
               каталог продукции
             </a>
@@ -262,32 +262,32 @@
           <li class="additional-products__item product">
             <h4 class="product__title">сахарозаменитель</h4>
             <p class="product__content">
-              <span>1 упаковка (100 г)</span>
-              <span>200 &#8381;</span>
+              <span class="product__volume">1 упаковка (100 г)</span>
+              <span class="product__price">200 &#8381;</span>
             </p>
             <button class="product__button button button--small" type="button">заказать</button>
           </li>
           <li class="additional-products__item product">
             <h4 class="product__title">питьевая вода</h4>
             <p class="product__content">
-              <span>5 литров</span>
-              <span>50 &#8381;</span>
+              <span class="product__volume">5 литров</span>
+              <span class="product__price">50 &#8381;</span>
             </p>
             <button class="product__button button button--small" type="button">заказать</button>
           </li>
           <li class="additional-products__item product">
             <h4 class="product__title">молоко</h4>
             <p class="product__content">
-              <span>1 литр</span>
-              <span>100 &#8381;</span>
+              <span class="product__volume">1 литр</span>
+              <span class="product__price">100 &#8381;</span>
             </p>
             <button class="product__button button button--small" type="button">заказать</button>
           </li>
           <li class="additional-products__item product">
             <h4 class="product__title">витамины</h4>
             <p class="product__content">
-              <span>1 упаковка (30 г)</span>
-              <span>300 &#8381;</span>
+              <span class="product__volume">1 упаковка (30 г)</span>
+              <span class="product__price">300 &#8381;</span>
             </p>
             <button class="product__button button button--small" type="button">заказать</button>
           </li>
@@ -305,7 +305,7 @@
           Подпишитесь на наши новости и не пропустите ни одного предложения!
         </p>
         <form class="subcription__form" action="#">
-          <label>
+          <label class="subcription__label">
             <input class="subcription__control" id="email" name="email" placeholder="KUKLACHEV@GMAIL.COM">
           </label>
           <button class="subcription__button button button--large" type="submit">подписаться</button>
@@ -319,7 +319,7 @@
       <h2 class="visually-hidden">Карта</h2>
       <div class="page__container">
         <div class="map__invitation invitation">
-          <div class="invitation__title">приглашаем к сотрудничеству дилеров!</div>
+          <div class="invitation__title">приглашаем <br>к сотрудничеству<br>дилеров!</div>
           <div class="invitation__address address">
             <p class="address__street">ул. Большая <br> Конюшенная, д. 19/8</p>
             <p class="address__city">Санкт-Петербург</p>

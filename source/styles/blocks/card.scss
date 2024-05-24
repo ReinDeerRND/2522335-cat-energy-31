@@ -5,13 +5,20 @@
   grid-template-areas: "image content" "button button";
   grid-template-columns: 1fr 1fr;
   grid-row-gap: 20px;
+  box-sizing: border-box;
 
   @media (min-width: $mobile-viewport) and (max-width: ($tablet-viewport - 1)) {
     @include page-container();
   }
 
   @media screen and (min-width: $tablet-viewport) {
-    border: 2px solid $bg-accent-color;
+    height: 511px;
+    background: linear-gradient(to bottom, transparent 30%, $bg-accent-color 30%, $bg-accent-color 100%);
+    border: none;
+    grid-template-areas: "image" "content" "button";
+    grid-template-columns: 1fr;
+    grid-row-gap: 0;
+    padding: 20px 40px;
   }
 }
 
@@ -19,6 +26,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  padding-top: 210px;
 
   &::before {
     content: "";
@@ -26,8 +34,13 @@
     width: 30px;
     height: 30px;
     background: url("/icons/stack.svg#plus") center/100% no-repeat;
+  }
 
-    @media screen and (min-width: $tablet-viewport) {
+  @media screen and (min-width: $tablet-viewport) {
+    justify-content: space-between;
+
+    &::before {
+      border: 2px solid $bg-accent-color;
       width: 60px;
       height: 60px;
     }
@@ -37,6 +50,7 @@
 .card__image {
   grid-area: image;
   object-fit: none;
+  display: block;
 }
 
 .card__title {
@@ -64,6 +78,8 @@
 
   @media screen and (min-width: $tablet-viewport) {
     background-color: $bg-accent-color;
+    justify-content: flex-start;
+    align-items: center;
   }
 }
 
@@ -99,4 +115,5 @@
 
 .card__button {
   grid-area: button;
+  width: 100%;
 }

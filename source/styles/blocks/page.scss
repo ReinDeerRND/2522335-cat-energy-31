@@ -14,12 +14,4 @@
 
 .page__container--tablet-activate {
   width: 100%;
-
-  @media screen and (min-width: $tablet-viewport) {
-    width: 708px;
-  }
-
-  @media screen and (min-width: $desktop-viewport) {
-    width: 1220px;
-  }
 }
