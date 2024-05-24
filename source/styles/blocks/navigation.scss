@@ -69,9 +69,10 @@
 }
 
 .navigation__list--accent-color {
-  .navigation__item--current {
+  .navigation__item--current.navigation__item--current {
     @media screen and (min-width: $desktop-viewport) {
       color: $accent-text-color;
+      border-bottom: 1px solid $accent-text-color;
     }
   }
 

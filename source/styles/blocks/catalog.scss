@@ -5,6 +5,10 @@
     @include page-container();
     border: none;
   }
+
+  @media screen and (min-width: $desktop-viewport) {
+    padding-top: 65px;
+  }
 }
 
 .catalog__title {
