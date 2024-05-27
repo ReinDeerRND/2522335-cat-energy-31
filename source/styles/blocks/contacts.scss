@@ -19,10 +19,12 @@
 .contacts__logo {
   padding: 10px 0;
   width: 100%;
-  text-align: center;
+  display: flex;
+  justify-content: center;
 
   @media screen and (min-width: $tablet-viewport) {
     width: 128px;
+    display: block;
     text-align: left;
   }
 }

@@ -11,6 +11,12 @@
   background-color: $bg-accent-color;
 }
 
+.map__content {
+  position: relative;
+  max-width: $desktop-viewport;
+  margin: 0 auto;
+}
+
 .map__invitation {
   margin: 20px 0;
 
@@ -26,12 +32,14 @@
     left: 0;
     padding: 60px;
     transform: translateY(40px);
+    z-index: 2;
   }
 }
 
 .map__wrapper {
   width: 100%;
   background-color: $bg-accent-color;
+  position: relative;
 }
 
 .map__image {

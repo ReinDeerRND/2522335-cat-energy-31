@@ -10,7 +10,6 @@
 
 .page__container {
   @include page-container();
-  position: relative;
 }
 
 .page__container--tablet-activate {
