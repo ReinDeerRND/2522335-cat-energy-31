@@ -1,6 +1,9 @@
 .page {
   font-family: $primary-font;
   background-color: transparent;
+  width: 100%;
+  max-width: $desktop-viewport;
+  margin: 0 auto;
 }
 
 .page__body {
