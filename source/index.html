@@ -35,7 +35,7 @@
           </button>
         </div>
         <ul class="navigation__list navigation__list--accent-color">
-          <li class="navigation__item navigation__item--current ">
+          <li class="navigation__item navigation__item--current">
             <a class="navigation__link link" href="index.html">
               главная
             </a>
@@ -57,7 +57,7 @@
 
   <main>
     <section class="hero">
-      <div class="hero__wrapper page__container">
+      <div class="page__container hero__wrapper">
         <h2 class="hero__title">Функциональное <br>питание для котов
         </h2>
         <p class="hero__content">Занялся собой? Займись котом!</p>
@@ -136,18 +136,18 @@
             </p>
             <div class="experience__statistic">
               <ul class="experience__list">
-                <li class="experience__item statistic-card">
-                  <p class="statistic-card__content">5 кг</p>
-                  <p class="statistic-card__caption">снижение веса</p>
+                <li>
+                  <p class="experience__card-content">5 кг</p>
+                  <div class="experience__card-caption">снижение веса</div>
                 </li>
-                <li class="experience__item statistic-card">
-                  <p class="statistic-card__content">60 дней</p>
-                  <p class="statistic-card__caption">затрачено времени</p>
+                <li>
+                  <p class="experience__card-content">60 дней</p>
+                  <div class="experience__card-caption">затрачено времени</div>
                 </li>
               </ul>
               <div class="experience__footer costs">
                 <span class="costs__title">затраты на питание:</span>
-                <span class="costs__content">15 000 руб.</span>
+                <span>15 000 руб.</span>
               </div>
             </div>
           </div>
@@ -191,6 +191,7 @@
         </picture>
       </div>
     </section>
+    <!-- <div style="position:relative;overflow:hidden;"><a href="https://yandex.ru/maps/2/saint-petersburg/?utm_medium=mapframe&utm_source=maps" style="color:#eee;font-size:12px;position:absolute;top:0px;">Санкт‑Петербург</a><a href="https://yandex.ru/maps/2/saint-petersburg/house/bolshaya_konyushennaya_ulitsa_19_8/Z0kYdQVjSUYAQFtjfXVyeXpgZQ==/?ll=30.320359%2C59.937914&utm_campaign=desktop&utm_medium=mapframe&utm_source=maps&z=15.7" style="color:#eee;font-size:12px;position:absolute;top:14px;">Большая Конюшенная улица, 19/8 — Яндекс Карты</a><iframe src="https://yandex.ru/map-widget/v1/?ll=30.320359%2C59.937914&mode=search&ol=geo&ouri=ymapsbm1%3A%2F%2Fgeo%3Fdata%3DCgg1NzM5NDE4NBJh0KDQvtGB0YHQuNGPLCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywg0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQu9C40YbQsCwgMTkvOCIKDZaV8kEVKcFvQg%2C%2C&utm_campaign=desktop&utm_medium=search&utm_source=maps&z=15.7" width="560" height="400" frameborder="1" allowfullscreen="true" style="position:relative;"></iframe></div> -->
     <section class="contacts">
       <div class="contacts__wrapper page__container">
         <h2 class="visually-hidden">Контакты</h2>
@@ -218,16 +219,6 @@
       </div>
     </section>
   </footer>
-  <script>
-    // для временной демонстрации работы кнопки меню
-    let menu = document.querySelector(".navigation__menu-button");
-    let navigation = document.querySelector(".navigation__list");
-    menu.addEventListener("click", () => {
-      menu.classList.toggle("navigation__menu-button--open");
-      navigation.classList.toggle("navigation__list--open");
-    }
-    );
-  </script>
 </body>
 
 </html>

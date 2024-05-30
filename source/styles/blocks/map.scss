@@ -18,7 +18,7 @@
 }
 
 .map__invitation {
-  margin: 20px 0;
+  margin: 30px 0;
 
   @media screen and (min-width: $tablet-viewport) {
     margin: 60px auto;
@@ -27,11 +27,12 @@
 
   @media screen and (min-width: $desktop-viewport) {
     position: absolute;
-    background-color: #ffffff;
     top: 0;
     left: 0;
-    padding: 60px;
-    transform: translateY(40px);
+    width: 405px;
+    padding: 60px 80px;
+    background-color: #ffffff;
+    transform: translateY(35px);
     z-index: 2;
   }
 }
