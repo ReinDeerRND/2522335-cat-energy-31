@@ -1,8 +1,14 @@
 /* в этот файл добавляет скрипты*/
-const menu = document.querySelector('.navigation__menu-button');
+// disable no-js
+const header = document.querySelector('.header');
+header.classList.remove('header--no-js');
+
 const navigation = document.querySelector('.navigation__list');
+navigation.classList.remove('navigation__list--no-js');
+
+// toggle-menu
+const menu = document.querySelector('.navigation__menu-button');
 menu.addEventListener('click', () => {
   menu.classList.toggle('navigation__menu-button--open');
   navigation.classList.toggle('navigation__list--open');
-}
-);
+});

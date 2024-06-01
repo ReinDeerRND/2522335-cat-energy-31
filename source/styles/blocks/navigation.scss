@@ -72,6 +72,11 @@
   display: flex;
 }
 
+.navigation__list--no-js {
+  display: block;
+  top: 0;
+  position: relative;
+}
 
 .navigation__item {
   font-family: $header-font;
