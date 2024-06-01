@@ -20,6 +20,7 @@
         <div class="navigation__wrapper">
           <a class="logo" href="index.html">
             <picture>
+              <source width="70" height="59" type="image/svg+xml" media="(min-width: 1440px)" srcset="images/logo-desktop.svg">
               <source width="60" height="50" type="image/svg+xml" media="(min-width: 768px)" srcset="images/logo-tablet.svg">
               <img class="logo__image" src="images/logo-mobile.svg" width="33" height="38" alt="Логотип">
             </picture>
@@ -66,7 +67,7 @@
               <img class="card__image" src="images/card-1-mobile@1x.png" srcset="images/card-1-mobile@2x.png 2x" width="140" height="107" alt="Cat Energy Pro Курица 500 г">
             </picture>
             <div class="card__content">
-              <h4 class="card__title">cat energy<br> pro 500 г</h4>
+              <h4 class="card__title">cat energy<br class="card__mobile-breakpoint"> pro <br class="card__tablet-breakpoint">500 г</h4>
               <ul class="card__list">
                 <li class="card__item">
                   <span>Масса</span>
@@ -92,7 +93,7 @@
               <img class="card__image" src="images/card-2-mobile@1x.png" srcset="images/card-2-mobile@2x.png 2x" width="140" height="107" alt="Cat Energy Pro Курица 1000 г">
             </picture>
             <div class="card__content">
-              <h4 class="card__title">cat energy <br>pro 1000 г</h4>
+              <h4 class="card__title">cat energy <br class="card__mobile-breakpoint">pro <br class="card__tablet-breakpoint"> 1000 г</h4>
               <ul class="card__list">
                 <li class="card__item">
                   <span>Масса</span>
@@ -118,7 +119,7 @@
               <img class="card__image" src="images/card-3-mobile@1x.png" srcset="images/card-3-mobile@2x.png 2x" width="140" height="107" alt="Cat Energy Pro Рыба 500 г">
             </picture>
             <div class="card__content">
-              <h4 class="card__title">cat energy<br> pro 500 г</h4>
+              <h4 class="card__title">cat energy<br class="card__mobile-breakpoint"> pro<br class="card__tablet-breakpoint"> 500 г</h4>
               <ul class="card__list">
                 <li class="card__item">
                   <span>Масса</span>
@@ -144,7 +145,7 @@
               <img class="card__image" src="images/card-4-mobile@1x.png" srcset="images/card-4-mobile@2x.png 2x" width="140" height="107" alt="Cat Energy Pro Рыба 1000 г">
             </picture>
             <div class="card__content">
-              <h4 class="card__title">cat energy<br> pro 1000 г</h4>
+              <h4 class="card__title">cat energy<br class="card__mobile-breakpoint"> pro<br class="card__tablet-breakpoint"> 1000 г</h4>
               <ul class="card__list">
                 <li class="card__item">
                   <span>Масса</span>
@@ -170,7 +171,7 @@
               <img class="card__image" src="images/card-5-mobile@1x.png" srcset="images/card-5-mobile@2x.png 2x" width="140" height="107" alt="Cat Energy Slim Гречка 500 г">
             </picture>
             <div class="card__content">
-              <h4 class="card__title">cat energy<br> slim 500 г</h4>
+              <h4 class="card__title">cat energy<br class="card__mobile-breakpoint"> slim<br class="card__tablet-breakpoint"> 500 г</h4>
               <ul class="card__list">
                 <li class="card__item">
                   <span>Масса</span>
@@ -196,7 +197,7 @@
               <img class="card__image" src="images/card-6-mobile@1x.png" srcset="images/card-6-mobile@2x.png 2x" width="140" height="107" alt="Cat Energy Slim Гречка 1000 г">
             </picture>
             <div class="card__content">
-              <h4 class="card__title">cat energy<br> slim 1000 г</h4>
+              <h4 class="card__title">cat energy <br class="card__mobile-breakpoint"> slim<br class="card__tablet-breakpoint"> 1000 г</h4>
               <ul class="card__list">
                 <li class="card__item">
                   <span>Масса</span>
@@ -222,7 +223,7 @@
               <img class="card__image" src="images/card-7-mobile@1x.png" srcset="images/card-7-mobile@2x.png 2x" width="140" height="107" alt="Cat Energy Slim Рис 500 г">
             </picture>
             <div class="card__content">
-              <h4 class="card__title">cat energy<br> slim 500 г</h4>
+              <h4 class="card__title">cat energy<br class="card__mobile-breakpoint"> slim<br class="card__tablet-breakpoint"> 500 г</h4>
               <ul class="card__list">
                 <li class="card__item">
                   <span>Масса</span>
@@ -244,9 +245,9 @@
         <li class="catalog__item">
           <div class="card card--add">
             <div class="card__content">
-              <h4 class="card__title">показать еще 100500 товаров</h4>
+              <h4 class="card__title">показать еще<br class="card__tablet-breakpoint"> 100500 товаров</h4>
               <div class="card__item">
-                На самом деле вкусов гораздо больше!
+                На самом деле вкусов <br class="card__tablet-breakpoint"> гораздо больше!
               </div>
             </div>
             <button class="card__button button button--small button--accent" type="button">показать все</button>
@@ -258,42 +259,44 @@
     <section class="additional-products">
       <div class="page__container">
         <h3 class="additional-products__title">Дополнительные товары</h3>
-        <ul class="additional-products__list">
-          <li class="additional-products__item product">
-            <h4 class="product__title">сахарозаменитель</h4>
-            <p class="product__content">
-              <span class="product__volume">1 упаковка (100 г)</span>
-              <span class="product__price">200 &#8381;</span>
-            </p>
-            <button class="product__button button button--small" type="button">заказать</button>
-          </li>
-          <li class="additional-products__item product">
-            <h4 class="product__title">питьевая вода</h4>
-            <p class="product__content">
-              <span class="product__volume">5 литров</span>
-              <span class="product__price">50 &#8381;</span>
-            </p>
-            <button class="product__button button button--small" type="button">заказать</button>
-          </li>
-          <li class="additional-products__item product">
-            <h4 class="product__title">молоко</h4>
-            <p class="product__content">
-              <span class="product__volume">1 литр</span>
-              <span class="product__price">100 &#8381;</span>
-            </p>
-            <button class="product__button button button--small" type="button">заказать</button>
-          </li>
-          <li class="additional-products__item product">
-            <h4 class="product__title">витамины</h4>
-            <p class="product__content">
-              <span class="product__volume">1 упаковка (30 г)</span>
-              <span class="product__price">300 &#8381;</span>
-            </p>
-            <button class="product__button button button--small" type="button">заказать</button>
-          </li>
-        </ul>
-        <div class="additional-products__promo promo">
-          <div class="promo__description">Закажите все <br>и получите чехол для <br>кота в подарок!</div>
+        <div class="additional-products__content">
+          <ul class="additional-products__list">
+            <li class="additional-products__item product">
+              <h4 class="product__title">сахарозаменитель</h4>
+              <p class="product__content">
+                <span class="product__volume">1 упаковка (100 г)</span>
+                <span class="product__price">200 &#8381;</span>
+              </p>
+              <button class="product__button button button--small" type="button">заказать</button>
+            </li>
+            <li class="additional-products__item product">
+              <h4 class="product__title">питьевая вода</h4>
+              <p class="product__content">
+                <span class="product__volume">5 литров</span>
+                <span class="product__price">50 &#8381;</span>
+              </p>
+              <button class="product__button button button--small" type="button">заказать</button>
+            </li>
+            <li class="additional-products__item product">
+              <h4 class="product__title">молоко</h4>
+              <p class="product__content">
+                <span class="product__volume">1 литр</span>
+                <span class="product__price">100 &#8381;</span>
+              </p>
+              <button class="product__button button button--small" type="button">заказать</button>
+            </li>
+            <li class="additional-products__item product">
+              <h4 class="product__title">витамины</h4>
+              <p class="product__content">
+                <span class="product__volume">1 упаковка (30 г)</span>
+                <span class="product__price">300 &#8381;</span>
+              </p>
+              <button class="product__button button button--small" type="button">заказать</button>
+            </li>
+          </ul>
+          <div class="additional-products__promo promo">
+            <div class="promo__description">Закажите все <br>и получите чехол для <br>кота в подарок!</div>
+          </div>
         </div>
       </div>
     </section>
