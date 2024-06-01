@@ -16,17 +16,20 @@
   }
 
   @media screen and (min-width: $desktop-viewport) {
+    $underlay: #414141;
     min-height: 630px;
     padding-top: 64px;
     background:
       linear-gradient(to right, #ffffff 50%, $color 50%, $color 100%),
-      url("/images/hero-cat-desktop@1x.jpg") bottom right -85%/contain no-repeat;
+      url("/images/hero-cat-desktop@1x.jpg") bottom right -85%/contain no-repeat,
+      linear-gradient(to right, #ffffff 50%, $underlay 50%, $underlay 100%);
   }
 
   @media screen and (min-width: $desktop-viewport) and (min-resolution: 2dppx) {
     background:
       linear-gradient(to right, #ffffff 50%, $color 50%, $color 100%),
-      url("/images/hero-cat-desktop@2x.jpg") bottom right -85%/contain no-repeat;
+      url("/images/hero-cat-desktop@2x.jpg") bottom right -85%/contain no-repeat,
+      linear-gradient(to right, #ffffff 50%, $underlay 50%, $underlay 100%);
   }
 }
 
