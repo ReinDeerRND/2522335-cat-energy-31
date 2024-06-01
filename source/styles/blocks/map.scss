@@ -3,7 +3,7 @@
   grid-auto-flow: row;
   row-gap: 0;
   background-color: #ffffff;
-  overflow-x: hidden;
+  overflow: hidden hidden;
   position: relative;
 }
 
@@ -55,3 +55,21 @@
     width: $desktop-viewport;
   }
 }
+
+.map__interactive-map {
+  position: absolute;
+  inset: 0;
+  width: $mobile-viewport;
+  height: 362px;
+  margin: 0 auto;
+
+  @media screen and (min-width: $tablet-viewport) {
+    width: $tablet-viewport;
+    height: 400px;
+  }
+
+  @media screen and (min-width: $desktop-viewport) {
+    width: $desktop-viewport;
+  }
+}
+
