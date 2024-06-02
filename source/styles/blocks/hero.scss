@@ -1,12 +1,23 @@
+$underlay: #414141;
+$dark-underlay: #555555;
+
 .hero {
   $color: rgba($bg-primary-color, 0.85);
+
   font-family: $header-font;
   color: $accent-text-color;
   min-height: 480px;
-  background: linear-gradient(to top, #ffffff 37%, $color 37%, $color 100%), url("/images/hero-cat-mobile@1x.jpg") top center no-repeat;
+  background:
+    linear-gradient(to top, #ffffff 0%, #ffffff 37%, $color 37%, $color 100%),
+    url("/images/hero-cat-mobile@1x.jpg") top center no-repeat,
+    linear-gradient(to right, $dark-underlay 0%, $underlay 100%);
+
 
   @media screen and (min-resolution: 2dppx) {
-    background: linear-gradient(to top, #ffffff 37%, $color 37%, $color 100%), url("/images/hero-cat-mobile@2x.jpg") top center/contain no-repeat;
+    background:
+      linear-gradient(to top, #ffffff 37%, $color 37%, $color 100%),
+      url("/images/hero-cat-mobile@2x.jpg") top center/contain no-repeat,
+      linear-gradient(to right, $dark-underlay 0%, $underlay 100%);
   }
 
   @media screen and (min-width: $tablet-viewport) {
@@ -16,7 +27,6 @@
   }
 
   @media screen and (min-width: $desktop-viewport) {
-    $underlay: #414141;
     min-height: 630px;
     padding-top: 64px;
     background:
