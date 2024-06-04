@@ -77,14 +77,22 @@
   color: $primary-text-color;
   font-size: 20px;
   text-transform: uppercase;
-  border: 1px solid #cdcdcd;
+  border: 1px solid #e7e7e7;
   width: 100%;
   padding: 12px 10px;
   box-sizing: border-box;
 
+  &:hover {
+    border: 1px solid #cdcdcd;
+  }
+
   @media screen and (min-width: $tablet-viewport) {
     height: 56px;
   }
+}
+
+.subcription__control--error {
+  border: 1px solid #ff8282;
 }
 
 .subcription__button {

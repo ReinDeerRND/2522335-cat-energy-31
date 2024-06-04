@@ -9,7 +9,9 @@
   <link rel="icon" href="favicon.ico">
   <link rel="icon" href="favicons/icon.svg" type="image/svg+xml">
   <link rel="apple-touch-icon" sizes="180x180" href="favicons//180.png">
-  <link rel="manifest" href="/manifest.webmanifest">
+  <link rel="manifest" href="/manifest.webmanifest" crossorigin="anonymous">
+  <link rel="preload" href="/fonts/lato/Lato-Regular.woff2" type="font/woff2" crossorigin="anonymous" as="font">
+  <link rel="preload" href="/fonts/oswald/oswaldregular.woff2" type="font/woff2" crossorigin="anonymous" as="font">
   <script src="scripts/index.js" defer></script>
 </head>
 
@@ -25,7 +27,7 @@
               <img class="logo__image" src="images/logo-mobile.svg" width="33" height="38" alt="Логотип">
             </picture>
           </a>
-          <a class="logo" href="#">
+          <a class="logo" href="index.html">
             <picture>
               <source width="118" height="21" type="image/svg+xml" media="(min-width: 1440px)" srcset="images/logo-text.svg">
               <img class="logo__text" src="images/logo-text.svg" width="101" height="18" alt="Cat Energy">
@@ -37,17 +39,17 @@
         </div>
         <ul class="navigation__list navigation__list--no-js">
           <li class="navigation__item">
-            <a class="navigation__link" href="index.html">
+            <a class="navigation__link link" href="index.html">
               главная
             </a>
           </li>
           <li class="navigation__item navigation__item--current">
-            <a class="navigation__link" href="catalog.html">
+            <a class="navigation__link link" href="#">
               каталог продукции
             </a>
           </li>
           <li class="navigation__item">
-            <a class="navigation__link" href="#">
+            <a class="navigation__link link" href="program-selection.html">
               подбор программы
             </a>
           </li>
@@ -330,9 +332,9 @@
         </div>
       </div>
       <div class="map__wrapper">
-        <div class="map__interactive-map">
+        <div class="map__interactive-map map__interactive-map--no-js">
           <div class="interactive-map">
-            <iframe loading="lazy" src="https://yandex.ru/map-widget/v1/?ll=30.320359%2C59.937914&mode=search&ol=geo&ouri=ymapsbm1%3A%2F%2Fgeo%3Fdata%3DCgg1NzM5NDE4NBJh0KDQvtGB0YHQuNGPLCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywg0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQu9C40YbQsCwgMTkvOCIKDZaV8kEVKcFvQg%2C%2C&utm_campaign=desktop&utm_medium=search&utm_source=maps&z=15.7" allowfullscreen></iframe>
+            <iframe class="interactive-map__frame" loading="lazy" src="https://yandex.ru/map-widget/v1/?ll=30.320359%2C59.937914&mode=search&ol=geo&ouri=ymapsbm1%3A%2F%2Fgeo%3Fdata%3DCgg1NzM5NDE4NBJh0KDQvtGB0YHQuNGPLCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywg0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQu9C40YbQsCwgMTkvOCIKDZaV8kEVKcFvQg%2C%2C&utm_campaign=desktop&utm_medium=search&utm_source=maps&z=15.7" allowfullscreen width="100%" height="400"></iframe>
           </div>
         </div>
         <picture>
@@ -362,7 +364,7 @@
           </ul>
         </div>
 
-        <a class="contacts__copyright copyright" href="#nav">
+        <a class="contacts__copyright copyright" href="https://htmlacademy.ru/intensive/adaptive">
           <span class="copyright__text">HTML Academy</span>
           <div class="copyright__image"></div>
         </a>

@@ -9,7 +9,9 @@
   <link rel="icon" href="favicon.ico">
   <link rel="icon" href="favicons/icon.svg" type="image/svg+xml">
   <link rel="apple-touch-icon" sizes="180x180" href="favicons//180.png">
-  <link rel="manifest" href="/manifest.webmanifest">
+  <link rel="manifest" href="/manifest.webmanifest" crossorigin="anonymous">
+  <link rel="preload" href="/fonts/lato/Lato-Regular.woff2" type="font/woff2" crossorigin="anonymous" as="font">
+  <link rel="preload" href="/fonts/oswald/oswaldregular.woff2" type="font/woff2" crossorigin="anonymous" as="font">
   <script src="scripts/index.js" defer></script>
 </head>
 
@@ -47,7 +49,7 @@
             </a>
           </li>
           <li class="navigation__item">
-            <a class="navigation__link link" href="#">
+            <a class="navigation__link link" href="program-selection.html">
               подбор программы
             </a>
           </li>
@@ -67,7 +69,7 @@
           <source width="709" height="609" media="(min-width: 768px)" type="image/png" srcset="images/hero-tablet@1x.png 1x, images/hero-tablet@2x.png 2x">
           <img class="hero__image" src="images/hero-mobile@1x.png" srcset="images/hero-mobile@2x.png 2x" width="280" height="270" alt="Cat energy product">
         </picture>
-        <a class="hero__link link button button--middle" href="#">
+        <a class="hero__link link button button--middle" href="program-selection.html">
           Подобрать программу
         </a>
       </div>
@@ -83,7 +85,7 @@
             </h3>
             <p class="program__content">Ваш кот весит больше собаки и почти утратил способность лазить по деревьям? Пора на диету!
               Cat Energy Slim поможет вашему питомцу сбросить лишний вес.</p>
-            <a class="program__link link" href="#">каталог slim</a>
+            <a class="program__link link" href="catalog.html">каталог slim</a>
           </li>
           <li class="program program--pro">
             <h3 class="program__header">
@@ -91,7 +93,7 @@
             </h3>
             <p class="program__content">Заработать авторитет среди дворовых котов и даже собак?
               Серия Cat Energy Pro поможет вашему коту нарастить необходимые мышцы!</p>
-            <a class="program__link link" href="#">каталог pro</a>
+            <a class="program__link link" href="catalog.html">каталог pro</a>
           </li>
         </ul>
       </div>
@@ -185,9 +187,9 @@
         </div>
       </div>
       <div class="map__wrapper">
-        <div class="map__interactive-map">
+        <div class="map__interactive-map map__interactive-map--no-js">
           <div class="interactive-map">
-            <iframe class="interactive-map__frame" loading="lazy" src="https://yandex.ru/map-widget/v1/?ll=30.320359%2C59.937914&mode=search&ol=geo&ouri=ymapsbm1%3A%2F%2Fgeo%3Fdata%3DCgg1NzM5NDE4NBJh0KDQvtGB0YHQuNGPLCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywg0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQu9C40YbQsCwgMTkvOCIKDZaV8kEVKcFvQg%2C%2C&utm_campaign=desktop&utm_medium=search&utm_source=maps&z=15.7" allowfullscreen></iframe>
+            <iframe class="interactive-map__frame" loading="lazy" src="https://yandex.ru/map-widget/v1/?ll=30.320359%2C59.937914&mode=search&ol=geo&ouri=ymapsbm1%3A%2F%2Fgeo%3Fdata%3DCgg1NzM5NDE4NBJh0KDQvtGB0YHQuNGPLCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywg0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQu9C40YbQsCwgMTkvOCIKDZaV8kEVKcFvQg%2C%2C&utm_campaign=desktop&utm_medium=search&utm_source=maps&z=15.7" allowfullscreen width="100%" height="400"></iframe>
           </div>
         </div>
         <picture>
@@ -200,7 +202,7 @@
     <section class="contacts">
       <div class="contacts__wrapper page__container">
         <h2 class="visually-hidden">Контакты</h2>
-        <a class="contacts__logo logo" href="index.html">
+        <a class="contacts__logo logo" href="index.html#nav">
           <img class="logo__image" src="images/logo-text.svg" width="128" height="24" alt="Cat Energy">
         </a>
         <div class="contacts__social">
@@ -217,7 +219,7 @@
           </ul>
         </div>
 
-        <a class="contacts__copyright copyright" href="#nav">
+        <a class="contacts__copyright copyright" href="https://htmlacademy.ru/intensive/adaptive">
           <span class="copyright__text">HTML Academy</span>
           <div class="copyright__image"></div>
         </a>

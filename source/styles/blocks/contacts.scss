@@ -55,3 +55,23 @@
     width: 162px;
   }
 }
+
+.copyright__text {
+  &:hover {
+    color: $bg-primary-color;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+}
+
+.copyright__image {
+  &:hover {
+    background-color: $bg-primary-color;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+}

@@ -19,6 +19,20 @@
     object-fit: contain;
   }
 
+  &:hover,
+  &:focus {
+    &::before {
+      background-color: $bg-primary-color;
+    }
+  }
+
+  &:active {
+    &::before {
+      background-color: $bg-primary-color;
+      opacity: 0.3;
+    }
+  }
+
   &.social__link--vkontakte {
     &::before {
       mask-image: url("/icons/stack.svg#vkontakte");

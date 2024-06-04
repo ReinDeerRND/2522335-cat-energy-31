@@ -85,6 +85,7 @@
   grid-area: image;
   object-fit: none;
   display: block;
+  cursor: pointer;
 
   @media screen and (min-width: $tablet-viewport) {
     padding: 35px 0 5px 25px;
@@ -105,6 +106,7 @@
   line-height: 20px;
   padding-bottom: 10px;
   padding-left: 10px;
+  cursor: pointer;
 
   @media screen and (min-width: $tablet-viewport) {
     font-size: 20px;

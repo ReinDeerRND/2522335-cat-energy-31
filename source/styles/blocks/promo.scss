@@ -1,6 +1,7 @@
 .promo {
   background: linear-gradient(to top, rgba($bg-primary-color, 0.85) 0%, rgba($bg-primary-color, 0.85) 100%), url("/images/cat-gift@1x.png") top center/contain no-repeat;
   padding: 50px 0 45px;
+  cursor: pointer;
 
   @media screen and (min-resolution: 2dppx) {
     background: linear-gradient(to top, rgba($bg-primary-color, 0.85) 0%, rgba($bg-primary-color, 0.85) 100%), url("/images/cat-gift@2x.png") top center/contain no-repeat;

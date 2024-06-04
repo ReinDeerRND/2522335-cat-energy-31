@@ -72,3 +72,7 @@
     width: $desktop-viewport;
   }
 }
+
+.map__interactive-map--no-js {
+  display: none;
+}
